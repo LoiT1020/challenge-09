@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/LoiT1020/challenge-09#readme",
   "dependencies": {
-    "inquirer": "^9.0.0"
+    "inquirer": "^7.0.3"
   }
 }
