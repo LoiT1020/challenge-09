@@ -1,0 +1,22 @@
+{
+  "name": "challenge-09",
+  "version": "1.0.0",
+  "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoiT1020/challenge-09.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LoiT1020/challenge-09/issues"
+  },
+  "homepage": "https://github.com/LoiT1020/challenge-09#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
+}
