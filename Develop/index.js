@@ -77,7 +77,7 @@ const generateTxT= (title, description, content,install,licence,feature,contribu
 }
 questions().then(
     item=> 
-    fs.writeFile('./test.txt',generateTxT(
+    fs.writeFile('../README.md',generateTxT(
         item.Title,item.Description,item.TableofContents,item.Installation,item.Licences,item.Features,item.Contributing,item.Test),err=>{
 if (err) throw err;
 console.log ('lets test')
