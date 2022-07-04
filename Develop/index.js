@@ -58,24 +58,31 @@ const questions = () =>{
 };
 const generateTxT= (title, description, content,install,licence,feature,contributing,test)=>{
     return`
-    #${title}
-    ##${description}
-    ##${content}
-    ##${install}
-    ##${licence}
-    ##${feature}
-    ##${contributing}
-    ##${test}
+    #  ${title}
+    ##Description
+    ${description}
+    ##Content
+    ${content}
+    ##Install
+    ${install}
+    ##Licence
+    ${licence}
+    ##Feature
+    ${feature}
+    ##Contributing
+    ${contributing}
+    ##Test
+    ${test}
     `
 }
 questions().then(
     item=> 
-    fs.writeFile('./test.txt',generateTxT(item.Title),err=>{
+    fs.writeFile('./test.txt',generateTxT(
+        item.Title,item.Description,item.TableofContents,item.Installation,item.Licences,item.Features,item.Contributing,item.Test),err=>{
 if (err) throw err;
 console.log ('lets test')
 })
 )
-
 
 
 // TODO: Create a function to write README file
